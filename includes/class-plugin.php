@@ -46,7 +46,7 @@ class Plugin {
 		}
 
 		$title .= sprintf(
-			' (<a class="%s" href="%s">%s</a>)',
+			' (<a class="%s" href="%s" target="_blank">%s</a>)',
 			esc_attr( $this->edit_link_class ),
 			esc_url( $edit_url ),
 			esc_html__( 'Edit' )
