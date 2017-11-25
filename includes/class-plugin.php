@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin
  *
- * @since 1.0
+ * @since 1.0.0
  * @package EditLinksACFRelationshipFields
  */
 class Plugin {
@@ -58,12 +58,14 @@ class Plugin {
 	public function output_css() {
 		?>
 		<style type="text/css">
-			.acf-field-relationship .<?php echo esc_html( $this->edit_link_class ); ?> {
+			.acf-field-relationship .<?php echo esc_html( $this->edit_link_class ); ?>,
+			.acf-field.field_type-relationship .<?php echo esc_html( $this->edit_link_class ); ?> {
 				-webkit-transition: none;
 				transition: none;
 			}
 
-			.acf-field-relationship .acf-rel-item:not( .disabled ):hover .<?php echo esc_html( $this->edit_link_class ); ?> {
+			.acf-field-relationship .acf-rel-item:not( .disabled ):hover .<?php echo esc_html( $this->edit_link_class ); ?>,
+			.acf-field.field_type-relationship .acf-relationship-item:not( .disabled ):hover .<?php echo esc_html( $this->edit_link_class ); ?> {
 				color: #fff;
 			}
 		</style>
@@ -84,8 +86,8 @@ class Plugin {
 					});
 				};
 
-				acf.add_action( 'ready_field/type=relationship', callback );
-				acf.add_action( 'append_field/type=relationship', callback );
+				acf.add_action( 'ready', callback );
+				acf.add_action( 'append', callback );
 
 			} )( jQuery );
 		</script>

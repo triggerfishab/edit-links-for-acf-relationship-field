@@ -1,8 +1,8 @@
 === Edit Links for ACF Relationship Fields ===
 Contributors: circuuz
 Tags: acf, advanced, custom, field, fields, form, repeater, content, relationship, relationship field
-Requires at least: 4.7
-Tested up to: 4.8.2
+Requires at least: 3.6
+Tested up to: 4.9
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
