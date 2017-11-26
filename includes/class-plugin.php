@@ -1,6 +1,6 @@
 <?php
 
-namespace EditLinksACFRelationshipFields;
+namespace EditLinksACFRelationshipField;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -10,13 +10,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Plugin
  *
  * @since 1.0.0
- * @package EditLinksACFRelationshipFields
+ * @package EditLinksACFRelationshipField
  */
 class Plugin {
 
 	public $version = '1.0.0';
 
-	public $edit_link_class = 'edit-link-acf-relationship-fields';
+	public $edit_link_class = 'edit-link-acf-relationship-field';
 
 	public function __construct() {
 		add_action( 'init', [ $this, 'init' ] );
