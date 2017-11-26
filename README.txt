@@ -13,6 +13,8 @@ Add edit links to the ACF Relationship Field.
 
 Use the Edit Links for ACF Relationship Fields plugin to add edit links to the ACF Relationship Field.
 
+**Requires Advanced Custom Fields PRO**
+
 
 == Installation ==
 
