@@ -4,7 +4,7 @@ Tags: acf, advanced, custom, field, fields, form, repeater, content, relationshi
 Requires at least: 3.6
 Tested up to: 4.9
 Stable tag: 1.0.0
-Requires PHP: 5.6
+Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ This plugin adds edit links to the posts in the administration of the ACF Relati
 = Requirements =
 
 * Advanced Custom Fields 5+ (ACF 4 is not supported)
-* PHP 5.6+
+* PHP 5.4+
 
 == Installation ==
 From your WordPress dashboard
